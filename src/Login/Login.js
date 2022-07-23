@@ -1,4 +1,3 @@
-import "./loginStyle.css";
 import logo from "../Assets/img/logo.png";
 
 export default function Login(){

@@ -1,7 +1,311 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:slnt,CASL,CRSV@-10,0.93,1&family=Righteous&display=swap');
 
-
 * {
     box-sizing: border-box;
     font-family: 'Recursive', sans-serif;
   }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent; 
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(248, 189, 189); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f33535; 
+}
+
+  h1{
+    font-family: 'Righteous', cursive;
+    max-width: 257px;
+    height: 30px;
+    font-size:36px;
+    font-weight:400;
+    color:#FFFFFF;
+    padding-bottom: 40px;
+  }
+
+  .root{
+    height: 100vh;
+  }
+
+  main{
+    width: auto;
+    min-height:100%; 
+    background-color: #FB6B6B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .login-container > img{
+    max-width: 136px;
+    height: 161px;
+  }
+
+ .start{
+    width: 246px;  
+    min-height: 54px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px inset #D70900;
+ }
+input{
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    color:#D70900;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+  /* -------- 2nd Page --------- */
+
+  h2{
+    font-size: min(max(36px, 4vw), 64px);
+    font-weight:400;
+    color:#FFFFFF;
+    padding: 40px 0 40px 0;
+    font-family: 'Righteous', cursive;
+  }
+
+h3{
+    font-size: min(max(16px, 4vw), 24px);
+    font-weight: 700;
+    color: #333333;
+}
+
+.main-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0 40px 0;
+}
+
+.smaller-logo{ 
+    width: min(max(50px, 4vw), 87px);;
+    max-height: 100px;
+}
+
+
+  .root{
+    height: 100vh;
+  }
+
+  .questionlist{
+    width: 100%;
+    min-height:100%; 
+    background-color: #FB6B6B;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: scroll;
+    padding-bottom: 110px;
+  }
+
+  .seeQuestion{
+    max-width: 567px;
+    width: 100%;
+    height: min(max(65px, 4vw), 91px);
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+    border-radius: 5px;
+  }
+
+  .questions-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 5px 0 5px;
+  }
+
+  .footer{
+    width: 100%;
+    min-height: 70px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+
+  .ending{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 400;
+    color: #333333;
+    font-size: 18px;
+    padding: 10px 0 8px 0;
+  }
+
+  .final-phrase{
+    font-weight: 700;
+    padding:5px;
+  }
+
+  .footer-icons{
+    display: flex;
+  }
+
+  h4{
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+    font-family: 'Recursive', sans-serif;
+    padding-bottom: 3px;
+  }
+
+  ion-icon[name="play-outline"]{
+    font-size: 32px;
+    font-weight: 800;
+    color:#333333;
+  }
+
+
+  .green-line-through{
+    text-decoration: line-through;
+    color: #2FBE34;
+  }
+  .orange-line-through{
+    text-decoration: line-through;
+    color: #FF922E;
+  }
+  .red-line-through{
+    text-decoration: line-through;
+    color: #FF3030;
+  }
+
+ion-icon[name="close-circle"]{
+  font-size: 28px;
+  color: #FF3030;
+}
+
+
+ion-icon[name="checkmark-circle"]{
+  font-size: 28px;
+  color: #2FBE34;
+}
+
+ion-icon[name="help-circle"]{
+  font-size: 28px;
+  color: #FF922E;
+}
+
+/* ------ Turned card ------ */
+
+.readQuestion{
+  max-width: 299px;
+  width: 100%;
+  min-height: 131px;
+  background-color: #FFFFD4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  word-break: break-word;
+  font-family: 'Recursive', sans-serif;
+}
+
+.lit-arrow{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 10px 10px 0;
+}
+
+.actualQuestion{
+  padding:20px 0 0 10px;
+}
+
+.readAnswer{
+  max-width: 299px;
+  width: 100%;
+  min-height: 131px;
+  background-color: #FFFFD4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  word-break: break-word;
+  font-family: 'Recursive', sans-serif;
+}
+
+.options{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  color:#FFFFFF;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.correctAnswer{
+  max-width: 85px;
+  width: 100%;
+  min-height: 37px;
+  border-radius: 5px;
+  background-color: #2FBE34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.unsureAnswer{
+  max-width: 85px;
+  width: 100%;
+  min-height: 37px;
+  border-radius: 5px;
+  background-color: #FF922E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrongAnswer{
+  max-width: 85px;
+  width: 100%;
+  min-height: 37px;
+  border-radius: 5px;
+  background-color: #FF3030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.actualAnswer{
+  padding:20px 0 0 10px;
+}
