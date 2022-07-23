@@ -1,0 +1,55 @@
+h1{
+    font-family: 'Righteous', cursive;
+    max-width: 257px;
+    height: 30px;
+    font-size:36px;
+    font-weight:400;
+    color:#FFFFFF;
+    padding-bottom: 40px;
+  }
+
+  .root{
+    height: 100vh;
+  }
+
+  main{
+    width: auto;
+    min-height:100%; 
+    background-color: #FB6B6B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .login-container > img{
+    max-width: 136px;
+    height: 161px;
+  }
+
+ .start{
+    width: 246px;  
+    min-height: 54px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px inset #D70900;
+ }
+input{
+    border: none;
+    outline: none;
+    background-color: #FFFFFF;
+    color:#D70900;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+  

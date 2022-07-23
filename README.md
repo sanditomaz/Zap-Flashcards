@@ -1,1 +1,1 @@
-Project of a flashcards app.
+Project of a flashcard app.
