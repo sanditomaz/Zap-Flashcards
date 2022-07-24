@@ -67,6 +67,7 @@
     justify-content: center;
     border-radius: 5px;
     border: 1px inset #D70900;
+    cursor: pointer;
  }
 input{
     border: none;
@@ -75,6 +76,7 @@ input{
     color:#D70900;
     font-size: 18px;
     font-weight: 400;
+    cursor: pointer;
 }
 
   /* -------- 2nd Page --------- */
@@ -88,7 +90,7 @@ input{
   }
 
 h3{
-    font-size: min(max(16px, 4vw), 24px);
+    font-size: min(max(16px, 4vw), 18px);
     font-weight: 700;
     color: #333333;
 }
@@ -120,19 +122,20 @@ h3{
     justify-content: flex-start;
     overflow: scroll;
     padding-bottom: 110px;
-    gap:10px;
+    gap:12px; 
   }
 
   .seeQuestion{
-    max-width: 567px;
+    max-width: 400px;
     width: 100%;
-    height: min(max(65px, 4vw), 91px);
+    height: 65px;
     background-color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 15px 0 15px;
     border-radius: 5px;
+    cursor: pointer;
   }
 
   .questions-container{
@@ -154,6 +157,7 @@ h3{
     position: fixed;
     bottom: 0;
     left: 0;
+    cursor: default;
   }
 
   .ending{
@@ -186,7 +190,7 @@ h3{
   }
 
   ion-icon[name="play-outline"]{
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 800;
     color:#333333;
   }
@@ -241,10 +245,12 @@ ion-icon[name="help-circle"]{
   align-items: flex-end;
   justify-content: flex-end;
   padding: 0 10px 10px 0;
+  cursor: pointer;
 }
 
 .actualQuestion{
   padding:20px 0 0 10px;
+  cursor: default;
 }
 
 .readAnswer{
@@ -269,6 +275,7 @@ ion-icon[name="help-circle"]{
   font-size: 12px;
   font-weight: 400;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .correctAnswer{
@@ -309,4 +316,16 @@ ion-icon[name="help-circle"]{
 
 .actualAnswer{
   padding:20px 0 0 10px;
+  cursor: default;
+}
+
+@media (max-width: 470px){
+    .seeQuestion{
+      max-width: 300px;
+      height: 56px  ;
+    }
+
+    ion-icon[name="play-outline"]{
+      font-size: 24px;
+    }
 }
