@@ -120,6 +120,7 @@ h3{
     justify-content: flex-start;
     overflow: scroll;
     padding-bottom: 110px;
+    gap:10px;
   }
 
   .seeQuestion{

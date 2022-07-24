@@ -1,74 +1,31 @@
-import logo from "../Assets/img/logo.png";
-import arrow from "../Assets/img/setinha.png"
-import party from "../Assets/img/party.png";
-import sad from "../Assets/img/sad.png";
+import React from "react";
+import Header from "../Header/Header";
+import Deck from "./Deck";
+import Footer from "../Footer/Footer";
 
 export default function QuestionList(){
+    const flashCard = [
+        {icon:'play-outline', name:'full', question: "Translante to French: I've been working here for two and a half years.", answer: "Je travaille ici depuis deux ans et demi."},
+        {icon:'play-outline', name:'full', question: "Translante to French: Last year, I traveled to Argentina.", answer: "L'année dernière, j'ai voyagé en Argentine."},
+        {icon:'play-outline', name:'full', question: "Translante to French: We had fun!", answer:"On s'est bien amusés !"},
+        {icon:'play-outline', name:'full', question: "Translante to French: We need to make a decision before tomorrow.", answer:"Il faut prendre une décision avant demain."},
+        {icon:'play-outline', name:'full', question: "Translante to French: Did you make an appointment with the doctor?", answer:"Avez-vous pris rendez-vous chez le médecin ?"},
+        {icon:'play-outline', name:'full', question: "Translante to French: The meal is over. I'm going to take off.", answer:"Le repas est terminé. Je vais prendre congé."},
+        {icon:'play-outline', name:'full', question: "Translante to French: Buying this property was a bad deal for my client.", answer:"Acheter cette propriété a été une mauvaise affaire pour mon client."},
+        {icon:'play-outline', name:'full', question: "Translante to French: I thought hard in order to solve this problem.", answer:"Je me suis creusé la tête pour résoudre ce problème."},
+    ];
+
+    let title = 1;
+    let shuffledCards = flashCard.sort(() => Math.random() - 0.5);
+
     return(
         <>
             <div className="questionlist">
-
-                <div className="main-logo">
-                    <img className="smaller-logo" src={logo} />
-                    <h2>ZapRecall</h2>
-                </div>
-
-                <div className="questions-container">
-
-                        <div className="readQuestion">
-                            <div className="actualQuestion">What is JSX ?</div>
-                            <div className="lit-arrow"><img src={arrow}/></div>
-                        </div>
-
-                        <div className="readAnswer">
-                            <div className="actualAnswer">JSX is a sintax to write HTML inside JS...</div>
-                            <div className="options">
-                                <div className="correctAnswer">Zap!</div>
-                                <div className="unsureAnswer">Took a while to remember</div>
-                                <div className="wrongAnswer">Can't remember</div>
-                            </div>
-                        </div>
-
-
-
-
-
-
-                    <div className="seeQuestion">
-                        <h3 className="green-line-through">Pergunta 1</h3>
-                        <ion-icon name="play-outline"></ion-icon>
-                    </div>
-
-                    <div className="seeQuestion">
-                        <h3 className="orange-line-through">Pergunta 2</h3>
-                        <ion-icon name="close-circle"></ion-icon>
-                    </div>
-
-                    <div className="seeQuestion">
-                        <h3 className="red-line-through">Pergunta 3</h3>
-                        <ion-icon name="checkmark-circle"></ion-icon>
-                    </div>
-
-                    <div className="seeQuestion">
-                        <h3 className="line-through">Pergunta 3</h3>
-                        <ion-icon name="help-circle"></ion-icon>
-                    </div>
-
-                    
-                </div>
+                <Header />
+                {shuffledCards.map((item, index) => <Deck key={index} question={item.question} answer={item.answer} icon={item.icon} name={item.name} title ={title++}/>)}    
             </div>
-             <div className="footer">
-                <div className="ending"> 
-                    <div className="final-phrase"> <img src={party} /> Congratulations</div>
-                    <div className="final-message">You remembered everything!</div>
-                </div>
-                <h4>0/4 DONE</h4>
-                <div className="footer-icons">
-                    <div><ion-icon name="help-circle"></ion-icon></div>
-                    <div><ion-icon name="help-circle"></ion-icon></div>
-                    <div><ion-icon name="help-circle"></ion-icon></div>
-                </div>
-            </div>
+            <Footer />
+             
         </>
     );
 
