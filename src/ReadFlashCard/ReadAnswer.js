@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../Footer/Footer";
 import RiskReadAnswer from "./RiskReadAnswer";
 
 export default function ReadAnswer({answer, title, counter, setCounter, coloredIcons, setColoredIcons}){

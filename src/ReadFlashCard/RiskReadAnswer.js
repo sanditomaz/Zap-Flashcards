@@ -1,6 +1,8 @@
 import Footer from "../Footer/Footer";
+
 export default function RiskReadAnswer({linethrough, title, coloredIcon}){
 let iconNumber = "";
+
 if(linethrough === "green-line-through"){return(
         <>
             <CheckAnswer linethrough="green-line-through" coloredIcon="checkmark-circle" title={title} />

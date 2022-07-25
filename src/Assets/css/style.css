@@ -158,6 +158,7 @@ h3{
     bottom: 0;
     left: 0;
     cursor: default;
+    z-index: 0;
   }
 
   .ending{
@@ -179,6 +180,7 @@ h3{
 
   .final-message{
     padding: 0 0 0 30px;
+    z-index: 5;
   }
 
   .footer-icons{

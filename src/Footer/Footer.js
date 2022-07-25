@@ -3,6 +3,7 @@ import React from "react";
 
 let showIcons =[];
 let totalPoints = 0;
+let count = 0;
 let wrong = false;
 
 function CheckFooterIcon(icon){
@@ -16,24 +17,23 @@ function CheckFooterIcon(icon){
     )}
 }
 
-function AddFooterIcon({iconNumber, total, totalPoints}){
+function AddFooterIcon({iconNumber, total}){
+    count = count + 1;
     showIcons = [...showIcons, iconNumber];
     console.log(totalPoints)
     return(
         <>
-            <h4>{totalPoints}/{total} DONE</h4>
+            <h4>{count -1}/{total} DONE</h4>
 
             <div className="footer-icons">
-                {showIcons.map((item, index)=> <CheckFooterIcon iconNumber = {item} key={index} />)}
+                {showIcons.map((item, index)=> (<CheckFooterIcon iconNumber = {item} key={index} />))}
             </div>
         </>
-    )
+    );
 }
 
 export default function Footer({iconNumber, total}){
-
- totalPoints = totalPoints + 1;
-
+    totalPoints = totalPoints + 1;
         console.log(totalPoints);
 
         if(iconNumber === "3"){
@@ -47,12 +47,12 @@ export default function Footer({iconNumber, total}){
         </div>
     )}else{
         return(
-         <>
+         
           <div className="footer"> 
             <FinalMessage display={wrong}/>
-            <AddFooterIcon total={total} iconNumber={iconNumber} totalPoints={totalPoints}/>
+            <AddFooterIcon total={total} iconNumber={iconNumber}/>
           </div>
-        </>
-        )
+
+        );
     }
 }

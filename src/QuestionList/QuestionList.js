@@ -25,7 +25,7 @@ export default function QuestionList(){
                 <Header />
                 {shuffledCards.map((item, index) => <Deck key={index} question={item.question} answer={item.answer} icon={item.icon} name={item.name} title ={title++}/>)}    
             </div>
-            <Footer total = {listLength}/>
+            <Footer total ={listLength}/>
              
         </>
     );
