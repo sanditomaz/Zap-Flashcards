@@ -214,18 +214,18 @@ h3{
   }
 
 ion-icon[name="close-circle"]{
-  font-size: 28px;
+  font-size: 23px;
   color: #FF3030;
 }
 
 
 ion-icon[name="checkmark-circle"]{
-  font-size: 28px;
+  font-size: 23px;
   color: #2FBE34;
 }
 
 ion-icon[name="help-circle"]{
-  font-size: 28px;
+  font-size: 23px;
   color: #FF922E;
 }
 
@@ -321,6 +321,10 @@ ion-icon[name="help-circle"]{
 .actualAnswer{
   padding:20px 0 0 10px;
   cursor: default;
+}
+
+.iconNumber{
+  color: transparent;
 }
 
 @media (max-width: 470px){

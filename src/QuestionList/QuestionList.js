@@ -17,6 +17,7 @@ export default function QuestionList(){
 
     let title = 1;
     let shuffledCards = flashCard.sort(() => Math.random() - 0.5);
+    let listLength = flashCard.length
 
     return(
         <>
@@ -24,7 +25,7 @@ export default function QuestionList(){
                 <Header />
                 {shuffledCards.map((item, index) => <Deck key={index} question={item.question} answer={item.answer} icon={item.icon} name={item.name} title ={title++}/>)}    
             </div>
-            <Footer />
+            <Footer total = {listLength}/>
              
         </>
     );
