@@ -121,7 +121,7 @@ h3{
     flex-direction: column;
     justify-content: flex-start;
     overflow: scroll;
-    padding-bottom: 110px;
+    padding-bottom: 140px;
     gap:12px; 
   }
 
@@ -175,6 +175,10 @@ h3{
   .final-phrase{
     font-weight: 700;
     padding:5px;
+  }
+
+  .final-message{
+    padding: 0 0 0 30px;
   }
 
   .footer-icons{

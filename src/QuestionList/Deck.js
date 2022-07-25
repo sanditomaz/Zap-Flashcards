@@ -5,7 +5,7 @@ import ReadQuestion from "./ReadQuestion";
 
 export default function Deck(cards){
     const [clicked, setClicked] = React.useState(true);
-
+    
     return(
         <div className="questions-container">
             <Question title={cards.title} name={cards.name} icon={cards.icon} question={cards.question} answer={cards.answer} />    
@@ -16,10 +16,10 @@ export default function Deck(cards){
 
 function Question(props){
     const [clicked, setClicked] = React.useState(true);
-
+  
     return(
         <>
-            {clicked ? <div className="seeQuestion" onClick={() => {setClicked(false)}}>
+            {clicked ? <div className="seeQuestion" onClick={() => {setClicked(false);}}>
                 <h3 className={props.name}>Question 0{props.title}</h3>
                 <ion-icon name={props.icon}></ion-icon>
             </div> :
