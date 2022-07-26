@@ -193,6 +193,7 @@ h3{
     color: #333333;
     font-family: 'Recursive', sans-serif;
     padding-bottom: 3px;
+    margin-bottom: 15px;
   }
 
   ion-icon[name="play-outline"]{
